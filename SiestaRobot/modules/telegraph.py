@@ -24,7 +24,7 @@ async def telegrap(event):
         start = datetime.now()
         reply_msg = await event.get_reply_message()
         input_str = event.pattern_match.group(1)
-        if input_str == "gm":
+        if input_str == "tm":
             downloaded_file_name = await Client.download_media(
                 reply_msg,
                 TMP_DOWNLOAD_DIRECTORY
