@@ -17,7 +17,7 @@ data = telegraph.create_account(short_name=wibu)
 auth_url = data["auth_url"]
 
 
-@register(pattern="^/t(gm|gt) ?(.*)")
+@register(pattern="^/t(m|xt) ?(.*)")
 async def telegrap(event):
     optional_title = event.pattern_match.group(2)
     if event.reply_to_msg_id:
@@ -61,7 +61,7 @@ async def telegrap(event):
                             ]
                         ]
                     )
-        elif input_str == "gt":
+        elif input_str == "xt":
             user_object = await Client.get_entity(reply_msg.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
             # apparently, all Users do not have last_name field
