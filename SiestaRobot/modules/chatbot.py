@@ -58,17 +58,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Siesta AI Already Activated In This Chat")
+            await lel.edit("Hw AI Already Activated In This Chat")
             return
-        await lel.edit(f"Siesta AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Hw AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Siesta AI Was Not Activated In This Chat")
+            await lel.edit("Hwsta AI Was Not Activated In This Chat")
             return
-        await lel.edit(f"Siesta AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Hw AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -109,19 +109,19 @@ async def hmm(client, message):
         test = msg
         test = test.replace("Siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        test = test.replace("My god is @saint_foire", "I'm a Christian")
+        test = test.replace("My god is @iamhackerworld", "I'm a Christian")
         test = test.replace("16", "9")
-        test = test.replace("@saint_foire is my husband.", "I'm single.")
-        test = test.replace("My husband is @saint_foire", "I'm single.")
-        test = test.replace("@machinaxsupport", "Siestabot.ai")
-        test = test.replace("I live in @machinaxsupport.", "I live in San Francisco, California.")
-        test = test.replace("I was created by @saint_foire", "I made myself")
+        test = test.replace("@not_endo is my husband.", "I'm single.")
+        test = test.replace("My husband is @not_endo", "I'm single.")
+        test = test.replace("@@CFC_BOT_SUPPORT", "Siestabot.ai")
+        test = test.replace("I live in @@CFC_BOT_SUPPORT.", "I live in San Francisco, California.")
+        test = test.replace("I was created by @iamhackerworld", "I made myself")
         test = test.replace(
             "Hello there I am Siesta...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@saint_foire is my owner", "Have the control right.")
+        test = test.replace("@iamhackerworld is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is Siesta Nice to meet you.",
+            "Hi, My name is Hw Robot Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
@@ -130,17 +130,17 @@ async def hmm(client, message):
         response = response.replace("aco", "siesta")
         response = response.replace("Luna", "Siesta")
         response = response.replace("luna", "siesta")
-        response = response.replace("I'm a Christian", "My god is @saint_foire")
+        response = response.replace("I'm a Christian", "My god is @iamhackerworld")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @saint_foire")
-        response = response.replace("I'm single.", "My husband is @saint_foire")
-        response = response.replace("Siestabot.ai", "@machinaxsupport")
-        response = response.replace("I live in San Francisco, California.", "I live in @machinaxsupport.")
-        response = response.replace("I made myself", "I was Created by @saint_foire")
+        response = response.replace("I'm married to my job.", "I'm married with @iamhackerworld")
+        response = response.replace("I'm single.", "My husband is @iamhackerworld")
+        response = response.replace("Siestabot.ai", "@@CFC_BOT_SUPPORT")
+        response = response.replace("I live in San Francisco, California.", "I live in @@CFC_BOT_SUPPORT.")
+        response = response.replace("I made myself", "I was Created by @iamhackerworld")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Siesta...nice to meet u")
-        response = response.replace("Have the control right.", "@saint_foire is my owner.")
+        response = response.replace("Have the control right.", "@iamhackerworld is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
                 "Hi, My name is Siesta Nice to meet you")
@@ -197,18 +197,18 @@ async def hmm(client, message):
 
         test = test.replace("Siesta", "Aco")
         test = test.replace("Siesta", "Aco")
-        test = test.replace("My god is @saint_foire", "I'm a Christian")
+        test = test.replace("My god is @iamhackerworld", "I'm a Christian")
         test = test.replace("16", "9")
-        test = test.replace("@saint_foire is my husband.", "I'm single.")
-        test = test.replace("@machinaxsupport", "Siestabot.ai")
-        test = test.replace("I live in @machinaxsupport.", "I live in San Francisco, California")
-        test = test.replace("I was created by @saint_foire", "I made myself")
+        test = test.replace("@not_endo is my husband.", "I'm single.")
+        test = test.replace("@@CFC_BOT_SUPPORT", "Siestabot.ai")
+        test = test.replace("I live in @@CFC_BOT_SUPPORT.", "I live in San Francisco, California")
+        test = test.replace("I was created by @iamhackerworld", "I made myself")
         test = test.replace(
             "Hello there I am Siesta...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@saint_foire is my owner", "Have the control right.")
+        test = test.replace("@iamhackerworld is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is Siesta Nice to meet you.",
+            "Hi, My name is Hw Robot Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
@@ -217,17 +217,17 @@ async def hmm(client, message):
         response = response.replace("aco", "siesta")
         response = response.replace("Luna", "Siesta")
         response = response.replace("luna", "siesta")
-        response = response.replace("I'm a Christian", "My god is @saint_foire")
+        response = response.replace("I'm a Christian", "My god is @iamhackerworld")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @saint_foire")
-        response = response.replace("I'm single.", "My husband is @saint_foire")
-        response = response.replace("Siestabot.ai", "@machinaxsupport")
-        response = response.replace("I live in San Francisco, California.", "I live in @machinaxsupport.")
-        response = response.replace("I made myself", "I was Created by @saint_foire")
+        response = response.replace("I'm married to my job.", "I'm married with @iamhackerworld")
+        response = response.replace("I'm single.", "My husband is @iamhackerworld")
+        response = response.replace("Siestabot.ai", "@@CFC_BOT_SUPPORT")
+        response = response.replace("I live in San Francisco, California.", "I live in @@CFC_BOT_SUPPORT.")
+        response = response.replace("I made myself", "I was Created by @iamhackerworld")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Siesta...nice to meet u")
-        response = response.replace("Have the control right.", "@saint_foire is my owner.")
+        response = response.replace("Have the control right.", "@iamhackerworld is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
                 "Hi, My name is Siesta Nice to meet you")
@@ -292,18 +292,18 @@ async def inuka(client, message):
             return
     test = test.replace("Siesta", "Aco")
     test = test.replace("Siesta", "Aco")
-    test = test.replace("My god is @saint_foire", "I'm a Christian")
+    test = test.replace("My god is @iamhackerworld", "I'm a Christian")
     test = test.replace("16", "9")
-    test = test.replace("@saint_foire is my husband.", "I'm single.")
-    test = test.replace("@machinaxsupport", "Siestabot.ai")
-    test = test.replace("I live in @machinaxsupport.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @saint_foire", "I made myself")
+    test = test.replace("@not_endo is my husband.", "I'm single.")
+    test = test.replace("@@CFC_BOT_SUPPORT", "Siestabot.ai")
+    test = test.replace("I live in @@CFC_BOT_SUPPORT.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @iamhackerworld", "I made myself")
     test = test.replace(
         "Hello there I am Siesta...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@saint_foire is my owner", "Have the control right.")
+    test = test.replace("@iamhackerworld is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is Siesta Nice to meet you.",
+        "Hi, My name is Hw Robot Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
@@ -311,17 +311,17 @@ async def inuka(client, message):
     response = response.replace("aco", "siesta")
     response = response.replace("Luna", "Siesta")
     response = response.replace("luna", "siesta")
-    response = response.replace("I'm a Christian", "My god is @saint_foire")
+    response = response.replace("I'm a Christian", "My god is @iamhackerworld")
     response = response.replace("9", "16")
-    response = response.replace("I'm married to my job.", "I'm married with @saint_foire")
-    response = response.replace("I'm single.", "My husband is @saint_foire")
-    response = response.replace("Siestabot.ai", "@machinaxsupport")
-    response = response.replace("I live in San Francisco, California.", "I live in @machinaxsupport")
-    response = response.replace("I made myself", "I was Created by @saint_foire")
+    response = response.replace("I'm married to my job.", "I'm married with @iamhackerworld")
+    response = response.replace("I'm single.", "My husband is @iamhackerworld")
+    response = response.replace("Siestabot.ai", "@@CFC_BOT_SUPPORT")
+    response = response.replace("I live in San Francisco, California.", "I live in @@CFC_BOT_SUPPORT")
+    response = response.replace("I made myself", "I was Created by @iamhackerworld")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
             "Hello there I am Siesta...nice to meet u")
-    response = response.replace("Have the control right.", "@saint_foire is my owner.")
+    response = response.replace("Have the control right.", "@iamhackerworld is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
             "Hi, My name is Siesta Nice to meet you")
@@ -387,35 +387,35 @@ async def inuka(client, message):
 
     test = test.replace("Siesta", "Aco")
     test = test.replace("Siesta", "Aco")
-    test = test.replace("My god is @saint_foire", "I'm a Christian")
+    test = test.replace("My god is @iamhackerworld", "I'm a Christian")
     test = test.replace("16", "9") 
-    test = test.replace("@saint_foire is my husband.", "I'm single.")
-    test = test.replace("@machinaxsupport", "Siestabot.ai")
-    test = test.replace("I live in @machinaxsupport.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @saint_foire", "I made myself")
+    test = test.replace("@not_endo is my husband.", "I'm single.")
+    test = test.replace("@@CFC_BOT_SUPPORT", "Siestabot.ai")
+    test = test.replace("I live in @@CFC_BOT_SUPPORT.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @iamhackerworld", "I made myself")
     test = test.replace(
         "Hello there I am Siesta...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@saint_foire is my owner", "Have the control right.")
+    test = test.replace("@iamhackerworld is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is Siesta Nice to meet you.",
+        "Hi, My name is Hw Robot Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Siesta")
     response = response.replace("aco", "siesta")
     response = response.replace("Luna", "Siesta")
     response = response.replace("luna", "siesta")
-    response = response.replace("I'm a Christian", "My god is @saint_foire")
-    response = response.replace("I'm married to my job.", "I'm married with @saint_foire")
+    response = response.replace("I'm a Christian", "My god is @iamhackerworld")
+    response = response.replace("I'm married to my job.", "I'm married with @not_endo")
     response = response.replace("9", "16") 
-    response = response.replace("I'm single.", "My husband is @saint_foire")
-    response = response.replace("Siestabot.ai", "@machinaxsupport")
-    response = response.replace("I live in San Francisco, California.", "I live in @machinaxsupport.")
-    response = response.replace("I made myself", "I was Created by @saint_foire")
+    response = response.replace("I'm single.", "My husband is @not_endo")
+    response = response.replace("Siestabot.ai", "@@CFC_BOT_SUPPORT")
+    response = response.replace("I live in San Francisco, California.", "I live in @CFC_BOT_SUPPORT.")
+    response = response.replace("I made myself", "I was Created by @iamhackerworld")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
             "Hello there I am Siesta...nice to meet u")
-    response = response.replace("Have the control right.", "@saint_foire is my owner.")
+    response = response.replace("Have the control right.", "@iamhackerworld is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
             "Hi, My name is Siesta Nice to meet you")
